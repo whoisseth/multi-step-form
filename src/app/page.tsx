@@ -38,7 +38,7 @@ export default function Home() {
     }
   }
   return (
-    <div className="flex min-h-screen w-full bg-light-blue items-center justify-center ">
+    <div className="flex min-h-screen w-full bg-light-blue md:items-center justify-center p-5  pt-32 md:pt-5">
       <MobileSidebar activeStep={activeStep} />
       <main className="bg-white h-auto z-20 w-full max-w-[900px] flex gap-10  p-4 rounded-2xl flex-col md:flex-row   ">
         <Sidebar activeStep={activeStep} />

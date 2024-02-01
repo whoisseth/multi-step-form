@@ -39,7 +39,7 @@ export default function FinishingUp({ prevStep, setActiveStep }: Props) {
       {confirm ? (
         <ThankYou />
       ) : (
-        <div className="flex justify-start flex-col  gap-10 h-full w-[400px]  ">
+        <div className="flex justify-start flex-col  gap-10 h-full md:w-[400px]  ">
           <ContentSection
             title="Finishing up"
             para="Double-check everything looks OK before confirming."

@@ -45,7 +45,7 @@ export default function PickAddOns({ nextStep, prevStep }: Props) {
   const [activeAddOns, setActiveAddOns] = useAtom(activeAddOnsAtom);
 
   return (
-    <div className="flex justify-start flex-col  gap-10 h-full w-[400px]  ">
+    <div className="flex justify-start flex-col  gap-10 h-full md:w-[400px]  ">
       <ContentSection
         title="Pick add-ons"
         para="  Add-ons help enhance your gaming experience."

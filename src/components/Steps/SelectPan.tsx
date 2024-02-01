@@ -54,7 +54,7 @@ export default function SelectPan({ nextStep, prevStep }: SelectPanType) {
       />
       <div className=" h-full flex flex-col justify-between ">
         <section className="flex flex-col gap-6">
-          <div className="flex justify-between gap-4 ">
+          <div className=" flex flex-col md:flex-row  justify-between gap-4 ">
             {bilingPlans.map((d, i) => (
               <Plan
                 billingPlan={billingPlan}
@@ -118,7 +118,7 @@ function Plan({
     <div
       onClick={() => setBillingPan(data)}
       className={cn(
-        "flex p-2  border flex-col rounded-md gap-7 w-[140px] cursor-pointer",
+        "flex p-2  border  md:flex-col rounded-md gap-7 md:w-[140px] cursor-pointer w-full ",
         {
           "border-purplish-blue bg-magnolia ":
             data.planType === billingPlan.planType
