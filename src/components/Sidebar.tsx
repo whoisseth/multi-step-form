@@ -88,12 +88,12 @@ export function MobileSidebar(props: SidebarType) {
   return (
     <div className=" md:hidden fixed  z-10   top-0 left-0  w-full">
       <Image
-        className="md:hidden absolute top-0 left-0  w-full object-contain"
+        className="md:hidden   w-full object-contain"
         src={bgSidebarMobile}
         alt="bg-sidebar-desktop"
       />
 
-      <div className="absolute top-0 left-0  py-8 px-8 flex md:flex-col gap-6  ">
+      <div className=" absolute  z-10   py-8 px-8 flex md:flex-col gap-6  top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
         {fromSteps.map((d, i) => (
           <ProgressStep
             key={i}
